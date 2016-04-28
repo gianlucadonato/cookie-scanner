@@ -1,0 +1,42 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+
+// Redefined Gray colors for theme
+$gray-darker:            #232735;
+$gray-dark:              #3a3f51;
+$gray:                   #dde6e9;
+$gray-light:             #e4eaec;
+$gray-lighter:           #edf1f2;
+
+// Classic brand colors
+
+$brand-primary:          #5d9cec;
+$brand-success:          #27c24c;
+$brand-info:             #23b7e5;
+$brand-warning:          #ff902b;
+$brand-danger:           #f05050;
+
+// New brand colors
+
+$brand-inverse:          #131e26;
+$brand-green:            #37bc9b;
+$brand-pink:             #f532e5;
+$brand-purple:           #7266ba;
+$brand-dark:             #3a3f51;
+$brand-yellow:           #fad732;
+
+.c-white {
+  color: #FFF;
+}
+
+//== Fonts
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+
+@font-face {
+	font-family: 'Moondance';
+	src: url(./../fonts/Moondance.otf);
+}

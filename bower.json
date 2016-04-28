@@ -1,0 +1,18 @@
+{
+  "name": "cookie-scanner",
+  "version": "0.0.0",
+  "authors": [
+    "Gianluca Donato",
+    "Daniele Tomasi"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "jquery": "^2.2.3",
+    "angular-ui-router": "^0.2.18",
+    "angular-jwt": "^0.0.9",
+    "simple-line-icons": "^2.2.4",
+    "loaders.css": "^0.1.2",
+    "balloon-css": "*",
+    "sweetalert": "^1.1.3"
+  }
+}

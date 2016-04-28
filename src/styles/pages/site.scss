@@ -1,0 +1,155 @@
+.site-page {
+  .header {
+    .button {
+      padding: 8px;
+      margin-top: 20px;
+      width: 100px;
+    }
+  }
+
+  .webview-wrapper {
+    position: relative;
+    overflow: hidden;
+    #webview {
+      display: inline-flex;
+      width: 100%;
+      height: 480px;
+      margin: 16px 0;
+      // &.hide {
+      //   flex: 0 1;
+      //   width: 0px;
+      //   height: 0px;
+      // }
+    }
+    #webview.notShow {
+      position: absolute;
+      right: 200%;
+    }
+    .alert {
+      margin: 10px 0;
+    }
+  }
+
+}
+
+.cookies-table {
+  display: flex;
+  box-orient: vertical;
+  box-direction: normal;
+  direction: column;
+  flex-direction: column;
+  flex-flow: column;
+  height: 650px;
+  border: 1px solid rgba(128,255,219,0.15)
+}
+
+.cookies-table-header {
+  height: 40px;
+  padding-left: 10px;
+  background-color: rgba(128,255,219,0.15);
+  color: #9aa8a9;
+  font-family: MoonDance;
+  font-weight: 100;
+  font-size: 120%;
+  line-height: 40px;
+  appearance: none;
+  font-smoothing: antialiased;
+}
+
+.cookies-table-body {
+  overflow-y: auto;
+  .line {
+    position: relative;
+    border-bottom: 1px solid rgba(128,255,219,0.15);
+    display: flex;
+    box-orient: horizontal;
+    box-direction: normal;
+    flex-direction: row;
+    box-pack: justify;
+    flex-pack: justify;
+    justify-content: space-between;
+    box-align: end;
+    flex-align: end;
+    align-items: flex-end;
+    color: #80ffdb;
+    appearance: none;
+    font-smoothing: antialiased;
+    padding: 10px;
+    &.edit-mode {
+      td {
+        input, textarea {
+          display: block;
+        }
+        span {
+          display: none;
+        }
+      }
+      .edit-actions {
+        display: block;
+      }
+    }
+    table {
+      width: 100%;
+      font-size: 16px;
+      tbody {
+        th, td {
+          padding: 8px;
+          line-height: 1;
+          input, textarea {
+            display: none;
+          }
+          span {
+            display: block;
+          }
+        }
+        th {
+          width: 100px;
+          color: #9aa8a9;
+          padding-right: 20px;
+        }
+      }
+      tfoot {
+        td {
+          display: flex;
+          width: 100%;
+          a {
+            padding: 10px;
+            width: 50%;
+          }
+        }
+      }
+    }
+    .actions {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5px;
+      a {
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        color: #80ffdb;
+      }
+    }
+    &:hover {
+      .actions {
+        display: flex;
+      }
+    }
+    .edit-actions {
+      display: none;
+      width: 100%;
+      div {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.cookies-table-empty {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #80ffdb;
+}

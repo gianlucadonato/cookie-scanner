@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="crclex">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="crclex,cookie,scanner">
+    <title>Cookie Scanner</title>
+    <!-- App styles-->
+    <link rel="stylesheet" href="styles/vendors.css">
+    <link rel="stylesheet" href="styles/all.css">
+  </head>
+  <body>
+    <div ui-view=""></div>
+    <!-- Load jQuery (see http://stackoverflow.com/a/32621989 issue) -->
+    <script>window.$ = window.jQuery = require('./vendors/jquery.min.js');</script>
+    <!-- App scripts-->
+    <script src="scripts/vendors.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

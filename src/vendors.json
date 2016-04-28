@@ -1,0 +1,11 @@
+[
+  "src/bower_components/angular/angular.min.js",
+  "src/bower_components/angular-ui-router/release/angular-ui-router.min.js",
+  "src/bower_components/angular-jwt/dist/angular-jwt.min.js",
+  "src/bower_components/simple-line-icons/css/simple-line-icons.css",
+  "src/bower_components/loaders.css/loaders.min.css",
+  "src/bower_components/loaders.css/loaders.css.js",
+  "src/bower_components/balloon-css/balloon.min.css",
+  "src/bower_components/sweetalert/dist/sweetalert.min.js",
+  "src/bower_components/sweetalert/dist/sweetalert.css"
+]

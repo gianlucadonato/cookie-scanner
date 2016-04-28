@@ -1,0 +1,30 @@
+.home-page {
+
+  h1 {
+    margin: 150px 0px 40px 0px;
+    padding: 0px;
+    width: 100%;
+    min-width: 200px;
+    font-size: 220%;
+    font-family: 'Moondance';
+    font-weight: 100;
+    text-align: center;
+    appearance: none;
+    font-smoothing: antialiased;
+    color: #80ffdb;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    input {
+      flex: 1;
+      padding: 8px 16px;
+      border-left: 0;
+    }
+    button {
+      margin: 0 5px;
+      width: 20%;
+    }
+  }
+}

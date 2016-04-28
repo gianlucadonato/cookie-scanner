@@ -1,0 +1,46 @@
+{
+  "name": "cookie-scanner",
+  "version": "1.0.0",
+  "description": "CRCLex Cookie Scanner",
+  "main": "./dist/main.js",
+  "scripts": {
+    "start": "electron ./dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carontelabs/cookie-scanner.git"
+  },
+  "keywords": [
+    "cookie",
+    "scanner"
+  ],
+  "authors": [
+    "Gianluca Donato",
+    "Daniele Tomasi"
+  ],
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/carontelabs/cookie-scanner/issues"
+  },
+  "homepage": "https://github.com/carontelabs/cookie-scanner",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "electron-prebuilt": "^0.37.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-expect-file": "0.0.7",
+    "gulp-filter": "^4.0.0",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-if": "^2.0.0",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-sync": "^0.1.4",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "yargs": "^4.6.0"
+  }
+}
