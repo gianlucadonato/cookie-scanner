@@ -66,6 +66,18 @@
                     <td><input type="text" ng-model="cookie.http"><span>{{cookie.http}}</span></td>
                   </tr>
                   <tr>
+                    <th>Category</th>
+                    <td>
+                      <select type="text" ng-model="cookie.category">
+                        <option value="marketing">marketing</option>
+                        <option value="analytic">analytic</option>
+                        <option value="technical">technical</option>
+                        <option value="preferences">preferences</option>
+                      </select>
+                      <span>{{cookie.category}}</span>
+                    </td>
+                  </tr>
+                  <tr>
                     <th>Description</th>
                     <td><textarea ng-model="cookie.description"></textarea><span>{{cookie.description}}</span></td>
                   </tr>
