@@ -41,8 +41,6 @@
 
       win.webContents.on('did-fail-load', function(err){
         $timeout(function(){
-          $scope.isLoading = false;
-          $scope.isRunning = false;
           $scope.showAlertMsg = false;
           console.log('did-fail-load', err);
         },0);
