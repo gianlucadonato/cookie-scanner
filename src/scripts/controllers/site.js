@@ -111,10 +111,10 @@
       Cookie
         .edit(cookie)
         .then(function(data){
-          console.log('cookie saved successfully!');
+          console.log('cookie updated successfully!');
         })
         .catch(function(err){
-          console.log('Unable to delete cookie');
+          console.log('Unable to update cookie');
         });
     };
 

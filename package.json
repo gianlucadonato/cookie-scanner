@@ -4,7 +4,11 @@
   "description": "CRCLex Cookie Scanner",
   "main": "./dist/main.js",
   "scripts": {
-    "start": "electron ./dist/main.js"
+    "start": "electron ./dist/main.js",
+    "clean": "rm -rf CookieScanner-darwin-x64",
+    "build": "electron-packager . CookieScanner --platform=darwin --arch=x64 --version-string.CompanyName=crclex --version-string.ProductName=CookieScanner --icon=dist/images/logo.icns",
+    "build:win": "electron-packager . CookieScanner --platform=win32 --arch=x64 --version-string.CompanyName=crclex --version-string.ProductName=CookieScanner --icon=ist/images/logo.icns",
+    "zip": "cd CookieScanner-darwin-x64 && zip -ryX CookieScanner-darwin-x64.zip CookieScanner.app"
   },
   "repository": {
     "type": "git",
@@ -25,6 +29,7 @@
   "homepage": "https://github.com/carontelabs/cookie-scanner",
   "devDependencies": {
     "del": "^2.2.0",
+    "electron-packager": "^7.0.1",
     "electron-prebuilt": "^0.37.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
