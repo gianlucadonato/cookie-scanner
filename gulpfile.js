@@ -53,8 +53,8 @@ gulp.task('scripts', function() {
     .pipe($.concat(config.scripts.name))
     .pipe($.ngAnnotate())
     .on('error', handleError)
-    .pipe( $.if(isProduction, $.uglify({preserveComments:'some'}) ))
-    .on('error', handleError)
+    // .pipe( $.if(isProduction, $.uglify({preserveComments:'some'}) ))
+    // .on('error', handleError)
     .pipe( $.if( useSourceMaps, $.sourcemaps.write() ))
     .pipe(gulp.dest(config.scripts.dest));
 });
@@ -75,7 +75,7 @@ gulp.task('styles', function() {
 // APP VENDORS
 gulp.task('vendors', function() {
   log.info('Building vendors assets..');
-  
+
   var jsFilter = $.filter('**/*.js', {restore: true});
   var cssFilter = $.filter('**/*.css', {restore: true});
 
@@ -137,14 +137,14 @@ gulp.task('clean', function () {
   ], {force:true});
 });
 
-gulp.task('prod', ['clean'], function() { 
+gulp.task('prod', ['clean'], function() {
   log.info('Starting production build...');
   isProduction = true;
-  useSourceMaps = false; 
+  useSourceMaps = false;
   return gulp.src('.');
 });
 
-gulp.task('dev', ['clean'], function() { 
+gulp.task('dev', ['clean'], function() {
   log.info('Starting development build...');
   isProduction = false;
   useSourceMaps = true;
@@ -178,12 +178,12 @@ function handleError(err) {
 // log to console
 var log = {
   info: function (msg) {
-    $.util.log( $.util.colors.blue( msg ) );  
+    $.util.log( $.util.colors.blue( msg ) );
   },
   success: function (msg) {
-    $.util.log( $.util.colors.green( msg ) );  
+    $.util.log( $.util.colors.green( msg ) );
   },
   error: function (msg) {
-    $.util.log( $.util.colors.red( msg ) );  
+    $.util.log( $.util.colors.red( msg ) );
   }
-}; 
+};
